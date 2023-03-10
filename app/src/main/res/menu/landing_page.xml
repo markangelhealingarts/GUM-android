@@ -31,4 +31,10 @@
         android:title="Gum Website"
         app:showAsAction="never"/>
 
+    <item
+        android:id ="@+id/About"
+        android:orderInCategory="104"
+        android:title="About"
+        app:showAsAction="never"/>
+
 </menu>
