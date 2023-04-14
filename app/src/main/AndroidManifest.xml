@@ -3,10 +3,16 @@
     package="com.example.a499_android">
 
     <uses-permission android:name="android.permission.SET_ALARM" />
-    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true"/>
-    <uses-feature android:name="android.hardware.sensor.gyroscope" android:required="true"/>
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.gyroscope"
+        android:required="true" />
 
     <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -14,228 +20,262 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.499_android">
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
         <!-- these activites are for admin users only -->
-
-        <activity android:name=".ViewResponseR"
+        <activity
+            android:name=".ViewResponseR"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".AdminLanding" />
         </activity>
-        <activity android:name=".ViewResponseO"
+        <activity
+            android:name=".ViewResponseO"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".AdminLanding" />
         </activity>
-        <activity android:name=".AddSurveyQuestions"
+        <activity
+            android:name=".AddSurveyQuestions"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".AdminLanding" />
         </activity>
-        <activity android:name=".AddSurveyQuestionsCount"
+        <activity
+            android:name=".AddSurveyQuestionsCount"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".AdminLanding" />
         </activity>
-        <activity android:name=".AddSurveyQuestionsMC"
+        <activity
+            android:name=".AddSurveyQuestionsMC"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".AdminLanding" />
         </activity>
-        <activity android:name=".PreviewNewSurvey"
+        <activity
+            android:name=".PreviewNewSurvey"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".AdminLanding" />
         </activity>
-        <activity android:name=".AddVideos"
+        <activity
+            android:name=".AddVideos"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".AdminLanding" />
         </activity>
-        <activity android:name=".ViewResponseUser"
+        <activity
+            android:name=".ViewResponseUser"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".AdminLanding" />
         </activity>
-        <activity android:name=".AdminMsgList"
+        <activity
+            android:name=".AdminMsgList"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".AdminLanding" />
         </activity>
-        <activity android:name=".ViewResponses"
+        <activity
+            android:name=".ViewResponses"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".AdminLanding" />
         </activity>
-        <activity android:name=".Tidbits"
+        <activity
+            android:name=".Tidbits"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".AdminLanding" />
         </activity>
-        <activity android:name=".AdminLanding"
+        <activity
+            android:name=".AdminLanding"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LandingPage" />
         </activity>
-        <activity android:name=".GetResponseListQuery"
+        <activity
+            android:name=".GetResponseListQuery"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".AdminLanding" />
         </activity>
-        <activity android:name=".SelectASurvey"
+        <activity
+            android:name=".SelectASurvey"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".AdminLanding" />
         </activity>
-        <activity android:name=".LoadPreviousSurvey"
+        <activity
+            android:name=".LoadPreviousSurvey"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".AdminLanding" />
-        </activity>
+        </activity> <!-- these activities do not require the tool bar as they're part of the login in process or queries -->
+        <activity
+            android:name=".StartExerciseM"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StartExercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CreateAccount"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Agreement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SelectSchedule"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LandingPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IntroVideo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FinishedExerciseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DetermineQuestionType"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UploadSurvey"
+            android:screenOrientation="portrait" />
 
-        <!-- these activities do not require the tool bar as they're part of the login in process or queries -->
-
-        <activity android:name=".StartExerciseM"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".StartExercise"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".CreateAccount"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Agreement"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".SelectSchedule"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".LandingPage"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".LoginActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".IntroVideo"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".FinishedExerciseActivity"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".DetermineQuestionType"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".UploadSurvey"
-            android:screenOrientation="portrait"/>
         <receiver android:name=".NotificationReceiver" />
-        <activity android:name=".SurveyResponse"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".SurveyMultiC"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".SurveyOneTen"
-            android:screenOrientation="portrait"/>
 
-        <!-- these activities's tool bar is only for regular users -->
-        <activity android:name=".SelectAvatar"
+        <activity
+            android:name=".SurveyResponse"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SurveyMultiC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SurveyOneTen"
+            android:screenOrientation="portrait" /> <!-- these activities's tool bar is only for regular users -->
+        <activity
+            android:name=".SelectAvatar"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LandingPage" />
         </activity>
-        <activity android:name=".VideoDemonstrations"
+        <activity
+            android:name=".VideoDemonstrations"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LandingPage" />
         </activity>
-        <activity android:name=".MessageAdmin"
+        <activity
+            android:name=".MessageAdmin"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LandingPage" />
         </activity>
-        <activity android:name=".UpdateSchedule"
+        <activity
+            android:name=".UpdateSchedule"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LandingPage" />
         </activity>
-        <activity android:name=".ChangeLevel"
+        <activity
+            android:name=".ChangeLevel"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LandingPage" />
         </activity>
-        <activity android:name=".SelectWorkout"
+        <activity
+            android:name=".SelectWorkout"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LandingPage" />
         </activity>
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- these activities are for the groups section of the app -->
-        <activity android:name=".GroupsLandingPage"
+        </activity> <!-- these activities are for the groups section of the app -->
+        <activity
+            android:name=".GroupsLandingPage"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LandingPage" />
         </activity>
-
-        <activity android:name=".CreateGroups"
-                android:screenOrientation="portrait">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".GroupsLandingPage" />
-        </activity>
-
-        <activity android:name=".CreateGroupSuccessPage"
+        <activity
+            android:name=".CreateGroups"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".GroupsLandingPage" />
         </activity>
-
-        <activity android:name=".JoinGroup"
+        <activity
+            android:name=".CreateGroupSuccessPage"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".GroupsLandingPage" />
         </activity>
-
-        <activity android:name=".JoinGroup2"
+        <activity
+            android:name=".JoinGroup"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".GroupsLandingPage" />
         </activity>
-
-        <activity android:name=".ViewCurrentGroups"
+        <activity
+            android:name=".JoinGroup2"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".GroupsLandingPage" />
         </activity>
-
-        <activity android:name=".CurrentJoinedGroups"
+        <activity
+            android:name=".ViewCurrentGroups"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".GroupsLandingPage" />
         </activity>
-
-        <activity android:name=".CurrentCreatedGroups"
+        <activity
+            android:name=".CurrentJoinedGroups"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".GroupsLandingPage" />
+        </activity>
+        <activity
+            android:name=".CurrentCreatedGroups"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
