@@ -213,7 +213,7 @@
                     android:layout_height="100dp"/>
                 <TextView
                     android:id="@+id/messageMarktxt"
-                    android:text="Groups"
+                    android:text="Teams"
                     android:layout_gravity="center"
                     android:textColor="@color/black"
                     android:textSize="14sp"

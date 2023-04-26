@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <ImageView
+        android:layout_width="191dp"
+        android:layout_height="259dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="250dp"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:text=" Get Up and Move is an activity app and website(getupandmove.net)
+        that guides people through a 5-minute set of carefully convinced activites to
+          to break up each hour of sitting in a typical working day"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:text="Pay"
+        android:onClick="open"
+        android:id="@+id/pays"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#000000"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.780"
+        tools:ignore="MissingConstraints"
+        android:layout_width="320dp"
+        android:layout_height="80dp"/>
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/amountEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Amount to Pay"
+        app:layout_constraintBottom_toTopOf="@+id/payStripe"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:text="Pay Stripe"
+        android:onClick="open"
+        android:id="@+id/payStripe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#000000"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.980"
+        tools:ignore="MissingConstraints"
+        android:layout_width="320dp"
+        android:layout_height="80dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,7 @@
 package com.example.a499_android;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -32,7 +33,25 @@ import java.util.Map;
 import java.util.Random;
 
 public class CreateGroups extends AppCompatActivity {
-    private final String TAG = "CreateGroups";
+@Override
+protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // setContentView(R.layout.activity_create_groups);
+        setContentView(R.layout.paynow);
+
+        }
+public void open(View view){
+        Intent m = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.paypal.com/paypalme/getupandmove?country.x=US&locale.x=en_US"));
+        m.setData(Uri.parse("https://www.paypal.com/paypalme/getupandmove?country.x=US&locale.x=en_US"));
+        startActivity(m);
+        }
+
+
+
+
+
+
+  /*  private final String TAG = "CreateGroups";
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     CollectionReference groups = db.collection("Groups");
@@ -183,6 +202,8 @@ public class CreateGroups extends AppCompatActivity {
             }
         });
     }
+
+   */
 
     private interface FirestoreCallback {
         void onSuccess(DocumentSnapshot document);
