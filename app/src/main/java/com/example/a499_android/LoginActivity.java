@@ -50,7 +50,7 @@ public class LoginActivity extends AppCompatActivity {
                 String passwordInput = password.getText().toString();
 
                 //Checking to see if it's Admin Mark.
-                if(usernameInput.equals("markangelhealingarts@gmail.com") && (passwordInput.equals("4MAngelGum$"))){
+                if(usernameInput.equals("markangelhealingarts@gmail.com") && (passwordInput.equals("4MAngelGUM$"))){
                     userDocRef = users.document(usernameInput);
                     findUser(new FirestoreCallback() {
                         @Override
