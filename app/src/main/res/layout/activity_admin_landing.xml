@@ -27,155 +27,150 @@
         android:layout_height="0dp"
         android:padding="14dp">
 
-    <!-- Row 1 -->
+        <!-- Row 1 -->
 
-    <!-- Column 1 View Shop-->
-    <androidx.cardview.widget.CardView
-        android:id="@+id/addEditTidbits"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:layout_marginBottom="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        app:cardElevation="8dp"
-        app:cardCornerRadius="8dp"
-        >
+        <!-- Column 1 View Shop-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/addEditTidbits"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
 
-        <LinearLayout
-            android:layout_gravity="center_horizontal|center_vertical"
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:src="@drawable/tidbit"
-                android:layout_gravity="center_horizontal"
-                android:layout_width="100dp"
-                android:layout_height="110dp"/>
-            <TextView
-                android:text="Add Tidbits/Update"
-                android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                android:textStyle="bold"
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/tidbit"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"/>
+                <TextView
+                    android:text="Add Tidbits/Update"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-    <!-- Column 2 Start Workout-->
-    <androidx.cardview.widget.CardView
-        android:id="@+id/addSurveyBtn"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:layout_marginBottom="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        app:cardElevation="8dp"
-        app:cardCornerRadius="8dp"
-        >
+        <!-- Column 2 Start Workout-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/addGroupsBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
 
-        <LinearLayout
-            android:layout_gravity="center_horizontal|center_vertical"
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:src="@drawable/survey"
-                android:layout_gravity="center_horizontal"
-                android:layout_width="80dp"
-                android:layout_height="100dp"/>
-            <TextView
-                android:text="Add Survey"
-                android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                android:textStyle="bold"
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Add Groups"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-    <!-- Row 2 -->
+        <!-- Row 2 -->
 
-    <!-- Column 1 Update Schedule-->
-    <androidx.cardview.widget.CardView
-        android:id="@+id/viewResponsesBtn"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:layout_marginBottom="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        app:cardElevation="8dp"
-        app:cardCornerRadius="8dp"
-        >
+        <!-- Column 1 Update Schedule-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/viewResponsesBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
 
-        <LinearLayout
-            android:layout_gravity="center_horizontal|center_vertical"
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:src="@drawable/data"
-                android:layout_gravity="center_horizontal"
-                android:layout_width="100dp"
-                android:layout_height="110dp"/>
-            <TextView
-                android:text="View Survey Data"
-                android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                android:textStyle="bold"
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/data"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"/>
+                <TextView
+                    android:text="View Survey Data"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-    <!-- Column 2 Video Demo-->
-    <androidx.cardview.widget.CardView
-        android:id="@+id/addVideosBtn"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:layout_marginBottom="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        app:cardElevation="8dp"
-        app:cardCornerRadius="8dp"
-        >
+        <!-- Column 2 Video Demo-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/addVideosBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
 
-        <LinearLayout
-            android:layout_gravity="center_horizontal|center_vertical"
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:src="@drawable/video"
-                android:layout_gravity="center_horizontal"
-                android:layout_width="80dp"
-                android:layout_height="100dp"/>
-            <TextView
-                android:text="Add Videos"
-                android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                android:textStyle="bold"
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/video"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"/>
+                <TextView
+                    android:text="Add Videos"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-</GridLayout>
+    </GridLayout>
 
     <GridLayout
         android:columnCount="1"
@@ -188,40 +183,40 @@
         android:layout_marginLeft="108dp"
         android:padding="0dp">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/resetUsers"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="1"
-        android:layout_marginBottom="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        app:cardElevation="8dp"
-        app:cardCornerRadius="8dp"
-        >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/resetUsers"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
 
-        <LinearLayout
-            android:layout_gravity="center_horizontal|center_vertical"
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:src="@drawable/reset"
-                android:layout_gravity="center_horizontal"
-                android:layout_width="50dp"
-                android:layout_height="50dp"/>
-            <TextView
-                android:text="Reset Weekly User List"
-                android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:textSize="14sp"
-                android:textStyle="bold"
+            <LinearLayout
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:orientation="vertical"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/reset"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+                <TextView
+                    android:text="Reset Weekly User List"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
     </GridLayout>
 </LinearLayout>

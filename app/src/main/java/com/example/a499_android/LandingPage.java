@@ -406,6 +406,21 @@ public class LandingPage extends AppCompatActivity {
                 i.setData(Uri.parse("https://gum-website.herokuapp.com/"));
                 startActivity(i);
                 break;
+            case R.id.contact:
+                Intent j = new Intent(Intent.ACTION_VIEW);
+                j.setData(Uri.parse("https://www.markangelhealingarts.com/contact.html"));
+                startActivity(j);
+                break;
+            case R.id.about_mark:
+                Intent m = new Intent(Intent.ACTION_VIEW);
+                m.setData(Uri.parse("https://www.markangelhealingarts.com/about.html"));
+                startActivity(m);
+                break;
+            case R.id.Donate:
+                Intent s = new Intent(Intent.ACTION_VIEW);
+                s.setData(Uri.parse("https://www.paypal.com/donate?token=a1QKv5G3IZ5uowCm1N_s7OUN3hxGZEHO8QEaSLTNEj8ofuoE95oDoweRV--ul1zKS_at90xDrPiyR2yG"));
+                startActivity(s);
+                break;
         }
 
         return super.onOptionsItemSelected(item);

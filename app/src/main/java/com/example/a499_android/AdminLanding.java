@@ -20,7 +20,7 @@ import java.util.ArrayList;
 public class AdminLanding extends AppCompatActivity {
     // these lists are created incase the the user selects add a survey or wants to load previous survey data
     // this is also the landing page for the admin, this page can only be accessed by mark angel himself or you the developer
-    CardView addEditTidbits, viewResponsesBtn, addSurveyBtn,addVideosBtn, resetSurvey;
+    CardView addEditTidbits, viewResponsesBtn, addSurveyBtn,addVideosBtn, resetSurvey, addGroupsBtn;
     ActionBar actionBar;
     public static ArrayList<String> w_survey_count_list = new ArrayList<>();
     public static ArrayList<String> w_survey_questions_list = new ArrayList<>();
@@ -56,6 +56,15 @@ public class AdminLanding extends AppCompatActivity {
             }
         });
 
+        //Groups addded button in the Admin Landing
+
+        addGroupsBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View group){
+                startActivity(new Intent(AdminLanding.this, CreateGroupsAdmin.class));
+            }
+        });
+
         addVideosBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,7 +93,7 @@ public class AdminLanding extends AppCompatActivity {
     private void wiredUp() {
         addEditTidbits = findViewById(R.id.addEditTidbits);
         viewResponsesBtn = findViewById(R.id.viewResponsesBtn);
-        addSurveyBtn = findViewById(R.id.addSurveyBtn);
+       // addSurveyBtn = findViewById(R.id.addSurveyBtn);
         addVideosBtn = findViewById(R.id.addVideosBtn);
         resetSurvey = findViewById(R.id.resetUsers);
     }

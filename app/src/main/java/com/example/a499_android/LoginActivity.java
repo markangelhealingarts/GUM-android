@@ -26,6 +26,8 @@ public class LoginActivity extends AppCompatActivity {
     Button loginButton;
     final String TAG = "";
 
+    public static String checkAdmin = "";
+
     public static String loggedUserName = "";
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -46,7 +48,20 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String usernameInput = username.getText().toString().toLowerCase();
                 String passwordInput = password.getText().toString();
-                if(usernameInput.length() != 0) {
+
+                //Checking to see if it's Admin Mark.
+                if(usernameInput.equals("markangelhealingarts@gmail.com") && (passwordInput.equals("angel"))){
+                    userDocRef = users.document(usernameInput);
+                    findUser(new FirestoreCallback() {
+                        @Override
+                        public void onSuccess(DocumentSnapshot document) {
+                            Intent toAdminLanding = new Intent(LoginActivity.this, AdminLanding.class);
+                            startActivity(toAdminLanding);
+                        }
+                    });
+                }
+
+               else if(usernameInput.length() != 0) {
                     userDocRef = users.document(usernameInput);
                     findUser(new FirestoreCallback() {
                         @Override

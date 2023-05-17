@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item name="about_mark" type="id">about_mark</item>
+    <item name="Donate" type="id">Donate</item>
+    <item name="contact" type="id">contact</item>
 </resources>
