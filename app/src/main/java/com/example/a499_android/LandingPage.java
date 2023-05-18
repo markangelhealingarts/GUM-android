@@ -65,6 +65,8 @@ public class LandingPage extends AppCompatActivity {
     public static final String W_SURVEY_COUNT = "w_survey_count";
     public static final String W_SURVEY_Q = "w_survey_q";
     public static final String W_SURVEY_QC = "w_survey_qc";
+
+    public static final String test = "Delete this later, this variable is for testing.";
     public static String fitnessLevel = "";
     public static String avatarName;
     String profile_path_total;
