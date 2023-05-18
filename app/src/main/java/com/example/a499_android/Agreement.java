@@ -13,6 +13,8 @@ public class Agreement extends AppCompatActivity {
     CheckBox checkBox;
     Button proceedBtn;
     boolean is_checked = false;
+
+    //hi there
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
